@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stress Detection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Stress Detection</h1>
+    <p>Using Machine Learning for Mental Health Monitoring</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#how">How It Works</a>
+    <a href="#demo">Demo</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>This project aims to detect stress levels in individuals using machine learning techniques. It is designed to assist in mental health monitoring by analyzing physiological and psychological indicators.</p>
+  </section>
+
+  <section id="how">
+    <h2>How It Works</h2>
+    <p>Our system collects input data such as heart rate, sleep patterns, and mood indicators. It then uses a trained machine learning model to analyze the data and predict the user's stress level.</p>
+  </section>
+
+  <section id="demo">
+    <h2>Live Demo</h2>
+    <p>Enter your data to simulate stress detection:</p>
+    <form id="stressForm">
+      <label for="heartRate">Heart Rate (bpm):</label>
+      <input type="number" id="heartRate" name="heartRate" required>
+
+      <label for="sleepHours">Sleep Hours:</label>
+      <input type="number" id="sleepHours" name="sleepHours" required>
+
+      <label for="mood">Mood:</label>
+      <select id="mood" name="mood" required>
+        <option value="">--Select--</option>
+        <option value="anxious">Anxious</option>
+        <option value="irritable">Irritable</option>
+        <option value="overwhelmed">Overwhelmed</option>
+        <option value="sad">Sad</option>
+        <option value="calm">Calm</option>
+      </select>
+
+      <button type="submit">Detect Stress Type</button>
+    </form>
+    <div id="result" class="result" style="display:none;"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For more information or collaboration, reach out to us at <a href="mailto:thummayashwanth489@gmail.com">thummayashwanth489@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Stress Detection System | Designed for Mental Health Monitoring
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
